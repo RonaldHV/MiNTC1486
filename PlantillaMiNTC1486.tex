@@ -1,0 +1,86 @@
+\documentclass{MiNTC1486}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{lipsum}
+
+% %-- Datos del trabajo de grado --
+\Titulo{ESTE ES EL TÍTULO DEL TRABAJO DE GRADO O PROYECTO, en minisculas}
+\AutorA{NOMBRE DEL PRIMER AUTOR}
+\AutorB{Nombre del segundo autor}
+\AutorC{}
+\Institucion{Universidad con nombre}
+\Facultad{Facultad de Ciencias Ocultas}
+\Departamento{Depatamento de objetos perdidos}
+\Programa{Programa-Dor}
+\Ciudad{CIUDAD}
+\Anho{2022}
+\Mes{Febrero}
+\Dia{29}
+\Tipotrabajo{Trabajo de grado para el titulo de X,\\ u otro tipo de trabajo}
+\Director{Director:\\Nombre de mi Sensei}
+\JuradoA{Sisabencomosoy Paraquémeinvitan\\ Cargo con experiencia}
+\JuradoB{Jurado 2\\ Profesor de facultad}
+
+
+\begin{document}
+
+% -- Cubierta (Opcional) --
+\Cubierta
+
+% --Portada --
+\Portada
+
+% --Aceptación (Opcional) --
+\Aceptacion
+
+% -- Dedicatoria (Opcional) --
+\Dedicatoria{Este trabajo se lo dedico hasta el señor de los domicilios}
+\Dedicatoria[Nombre del dedicador o dedicadores]{Esto va para todos}
+
+% -- Agradecimentos(Opcional) --
+\newpage
+\thispagestyle{empty}
+\begin{center}
+    AGRADECIMIENTOS
+\end{center}
+\Agradecientos[Quien da las gracias]{%
+Gracias totales
+
+\lipsum[1]
+}
+%
+\Agradecientos[Bienagradecido]{%
+\lipsum[3]
+}
+
+% -- Contenido --
+\Contenido
+
+% -- Lista de figuras --
+\Listadefiguras
+
+% % -- Lista de tablas --
+\Listadetablas
+
+% -- Resumen --
+\Resumen{\lipsum[1]}
+
+% -- Introducción --
+\include{Introduccion/Introduccion}
+
+% -- Capítulo 1 --
+\include{Cap_1/NombreCap_1}
+%
+% -- Capítulo 2 --
+\include{Cap_2/NombreCap_2}
+%
+% -- CONCLUSIONES --
+\include{Conclusiones/Conclusiones}
+%
+% -- BIBLIOGRAFÍA --
+\include{Bibliografia/Bibliografia}
+
+\end{document}
