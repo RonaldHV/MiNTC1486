@@ -1,0 +1,53 @@
+% Este es el segundo capítulo del documento
+\chapter{EL CAPÍTULO 2 DEL DOCUMENTO}
+%
+\lipsum[1]
+
+Esta es la manera de presentar las figuras. La Figura \ref{figuraNorma}, muestra el ejemplo.
+
+\begin{figure}[ht]
+    \vspace{\baselineskip}
+    \caption{Esta es la forma de inlcuir las figuras, con un \emph{caption} extenso para notar cómo se muestra en la figura}
+    \label{figuraNorma}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Cap_2/Fig_Cap_2/Norma}
+    \vspace{\baselineskip}
+\end{figure}
+
+La Figura \ref{figuraPortada} es un archivo con extensión .pdf, que muestra la primera página de la NTC~1486~\cite{NTC1486}.
+
+\begin{figure}[ht]
+    \vspace{\baselineskip}
+    \caption{Esta es una figura en formato .pdf}
+    \label{figuraPortada}
+    \centering
+    \includegraphics[width=0.5\textwidth]{Cap_2/Fig_Cap_2/Portada}
+    \vspace{\baselineskip}
+\end{figure}
+
+\section{Tablas}
+La Tabla \ref{refdelatabla}, muestra un ejemplo de cómo quedan las tablas.
+
+\begin{table}[!ht]
+    \vspace{\baselineskip}
+    \caption{Esta es la descripción de la tabla}
+    \label{refdelatabla}
+    \centering
+    \begin{tabular}{cccc}
+        \hline
+        \hline
+        Col 1   & Col 2 & Col 3 &  Col 4\\
+        \hline
+        fila 1  & 1     & 2     & 3\\
+        fila 2  & 4     & 5     & 6\\
+        fila 3  & 7     & 8     & 9\\
+        \hline
+        \hline
+    \end{tabular}
+\end{table}
+
+
+
+\section{Este sería un subtitulo}
+%
+\lipsum[3-4]
