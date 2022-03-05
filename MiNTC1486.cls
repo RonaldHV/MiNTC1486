@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{MiNTC1486}[2022/02/19 MiNTC1486 LaTeX class - Adaptación para LaTeX de la NTC1486]
+\ProvidesClass{MiNTC1486}[2022/02/19 MiNTC1486 LaTeX class - Adaptación para LaTeX de la NTC1486 de Icontec]
 
 
 \LoadClass[11pt,letterpage,oneside]{book}
@@ -145,7 +145,7 @@
 % --------------------------------------------
 
 % -- Agradecientos --
-\newcommand{\Agradecientos}[2][]{
+\newcommand{\Agradecimientos}[2][]{
     {\large #2}\par
     #1\par
     \vspace*{2\baselineskip}
