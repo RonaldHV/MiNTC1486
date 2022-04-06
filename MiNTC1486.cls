@@ -284,6 +284,24 @@
 {\hfill\contentspage}[]
 % --------------------------------------------
 
+% -- Forma de los elementos de la tof
+\titlecontents{figure} %--- Aspecto en toc
+[4.5em] % [3.8em] ie, 1.5em (chapter) + 2.3em
+{}
+{\contentslabel[Figura \thecontentslabel]{4.5em}}
+{\hspace*{-2.3em}}
+{\hfill\contentspage}[\addvspace{0.5\baselineskip}]
+% --------------------------------------------
+
+% -- Forma de los elementos de la tot
+\titlecontents{table} %--- Aspecto en toc
+[4.5em] % [3.8em] ie, 1.5em (chapter) + 2.3em
+{}
+{\contentslabel[Tabla \thecontentslabel]{4.5em}}
+{\hspace*{-2.3em}}
+{\hfill\contentspage}[\addvspace{0.5\baselineskip}]
+% --------------------------------------------
+
 % -- Bibliografia --
 \renewcommand{\bibname}{\normalsize BIBLIOGRAFÍA}
 % --------------------------------------------
