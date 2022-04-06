@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{MiNTC1486}[2022/02/19 MiNTC1486 LaTeX class - Adaptación para LaTeX de la NTC1486 de Icontec]
+\ProvidesClass{MiNTC1486}[2022/02/19 MiNTC1486 LaTeX class - Adaptacion para LaTeX de la NTC1486 de Icontec]
 
 
 \LoadClass[11pt,letterpage,oneside]{book}
@@ -18,7 +18,7 @@
 % -- Paquetes usados para dar forma al documento --
 \RequirePackage[left=4cm,right=2cm,top=2cm,bottom=2cm,includehead,includefoot]{geometry}
 \RequirePackage{ifthen}
-\RequirePackage{titlesec}
+\RequirePackage{titlesec,titletoc}
 \RequirePackage[figurewithin=none]{caption}
     \captionsetup[figure]{format=hang,labelsep=period,font=normalsize,labelfont=normalfont,width=0.8\textwidth}
     \captionsetup[table]{format=hang,labelsep=period,font=normalsize,labelfont=normalfont,width=0.8\textwidth}
@@ -144,7 +144,7 @@
 }
 % --------------------------------------------
 
-% -- Agradecientos --
+% -- Agradecimientos --
 \newcommand{\Agradecimientos}[2][]{
     {\large #2}\par
     #1\par
@@ -252,6 +252,36 @@
 {0pt} %margen a la izquierda
 {1\baselineskip} %Espacio antes del titulo
 {2em} %Espacio luego del titulo
+% --------------------------------------------
+
+% -- Forma de los elementos de la toc
+\titlecontents{chapter} %--- Alineación en toc
+[1.7em]
+{\addvspace{0.5\baselineskip}\bfseries}
+{\contentslabel[\thecontentslabel]{1.5em}}
+{\hspace*{-1.5em}}
+{\hfill\contentspage}[\addvspace{0.25\baselineskip}]
+
+\titlecontents{section} %--- Alineación en toc
+[2.5em]
+{}
+{\contentslabel[\thecontentslabel]{2.5em}}
+{}
+{\hfill\contentspage}[]
+
+\titlecontents{subsection} %--- Alineación en toc
+[3em]
+{}
+{\contentslabel[\thecontentslabel]{3em}}
+{}
+{\hfill\contentspage}[]
+
+\titlecontents{subsubsection} %--- Aspecto en toc
+[3.5em]
+{}
+{\contentslabel[\thecontentslabel]{3.5em}}
+{}
+{\hfill\contentspage}[]
 % --------------------------------------------
 
 % -- Bibliografia --
